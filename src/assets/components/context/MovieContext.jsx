@@ -8,9 +8,17 @@ export const MovieProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
-    const storedFavs = localStorage.getItem("favorites");
-
-    if (storedFavs) setFavorites(JSON.parse(storedFavs));
+    try {
+      const storedFavs = localStorage.getItem("favorites");
+      if (storedFavs) {
+        const parsedFavs = JSON.parse(storedFavs);
+        if (Array.isArray(parsedFavs)) {
+          setFavorites(parsedFavs);
+        }
+      }
+    } catch (e) {
+      console.error("Failed to parse favorites from localStorage", e);
+    }
   }, []);
 
   useEffect(() => {
