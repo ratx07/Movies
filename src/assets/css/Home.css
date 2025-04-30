@@ -1,3 +1,7 @@
+* {
+  width: 100%;
+}
+
 .home {
   padding: 2rem 0;
   width: 100%;
@@ -21,6 +25,7 @@
   background-color: #333;
   color: white;
   font-size: 1rem;
+  width: 250px;
 }
 
 .search-input:focus {
@@ -36,6 +41,7 @@
   font-weight: 500;
   transition: background-color 0.2s;
   white-space: nowrap;
+  width: 150px;
 }
 
 .search-button:hover {

@@ -4,9 +4,9 @@ import MovieCard from "../components/MovieCard";
 
 function Favorite() {
   const { favorites } = useMovieContext();
-  if (favorites)
+  if (favorites) {
     return (
-      <div>
+      <div className="favorites">
         <h2>Your Favorites</h2>
         <div className="movies-grid">
           {favorites.map((movie) => (
@@ -15,6 +15,7 @@ function Favorite() {
         </div>
       </div>
     );
+  }
 
   return (
     <div className="faroite-empty">
