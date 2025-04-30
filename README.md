@@ -1,12 +1,49 @@
-# React + Vite
+## Movie App
+A simple React-based web application that fetches and displays popular movies using The Movie Database (TMDb) API. Users can browse popular titles along with movie posters, titles, and brief details.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Features**
+1. Browse popular movies
+2. Fetch and display posters, titles, and other details
+3. Responsive design using CSS
+4. Clean and minimalist UI
 
-Currently, two official plugins are available:
+🛠️ **Technologies Used**
+1. React.js
+2. Axios (for API requests)
+3. TMDb API
+4. CSS / styled-components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📦 **Installation**
+bash
+Copy
+Edit
+git clone https://github.com/ratx07/Movies.git
+cd Movies
+npm install
+npm start
 
-## Expanding the ESLint configuration
+🔗 **API Setup**
+Create an account at TMDb.
+Get your API key.
+Create a .env file in the root directory:
+env
+Copy
+Edit
+REACT_APP_TMDB_API_KEY=your_api_key_here
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📁** Project Structure**
+pgsql
+Copy
+Edit
+Movies/
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.js
+│   ├── index.js
+├── .env
+├── package.json
+└── README.md
+
+🙌 Acknowledgements
+TMDb API for movie data.
